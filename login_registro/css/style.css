@@ -98,7 +98,10 @@ a:hover { text-decoration: underline;}
 
 .formulario .error ul { padding: 0 15px;}
 
-.formulario .error ul li { margin-bottom: 10px;}
+.formulario .error ul li { 
+    margin-bottom: 10px;
+    color: #fff;
+}
 
 .formulario .submit-btn {
     padding: 15px;
