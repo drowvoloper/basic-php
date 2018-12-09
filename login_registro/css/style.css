@@ -10,7 +10,6 @@ body {
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
     background: #1B1D35;
-    color:#1B1D35;
 }
 
 a {
@@ -24,6 +23,7 @@ a:hover { text-decoration: underline;}
     max-width: 500px;
     width: 90%;
     margin: auto;
+    color:#1B1D35;
 }
 
 .titulo {
@@ -75,7 +75,7 @@ a:hover { text-decoration: underline;}
     vertical-align: top;
 }
 
-.formulario .icono .izquierda {
+.formulario .icono.izquierda {
     margin-right: 4px;
     -webkit-border-radius:3px 0 0 3px;
     -moz-border-radius:3px 0 0 3px;
@@ -87,11 +87,11 @@ a:hover { text-decoration: underline;}
 .formulario .usuario,
 .formulario .password {
     width: calc(100% - 52px);
-    -webkit-border-radius:3px 0 0 3px;
-    -moz-border-radius:3px 0 0 3px;
-    -ms-border-radius:3px 0 0 3px;
-    -o-border-radius:3px 0 0 3px;
-    border-radius:3px 0 0 3px;   
+    -webkit-border-radius:0 3px 3px 0;
+    -moz-border-radius:0 3px 3px 0;
+    -ms-border-radius:0 3px 3px 0;
+    -o-border-radius:0 3px 3px 0;
+    border-radius:0 3px 3px 0;   
 }
 
 .formulario .password_btn { width:calc(100% - 105px);}
@@ -120,11 +120,15 @@ a:hover { text-decoration: underline;}
     border-radius:0 3px 3px 0;
 }
 
-.texto-registrate { text-align: center;}
+.texto-registrate { 
+    text-align: center;
+    color: #fff;
+}
 
 .texto-registrate a { 
     display: block;
     font-size: 18px;
+    color: #B8711B;
 }
 
 .contenido article {
