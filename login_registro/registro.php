@@ -1,5 +1,6 @@
 <?php session_start();
 
+#comprobamos si la sesión está activa
 if (isset($_SESSION['usuario'])) {
     header('Location: index.php');
 } 
