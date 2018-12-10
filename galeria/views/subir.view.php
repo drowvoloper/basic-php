@@ -27,6 +27,11 @@
         <label for="texto">Descripción</label>
         <textarea name="texto" id="texto" placeholder="Sobre la foto"></textarea>
 
+        <?php if(isset($error)): ?>
+
+            <p class="error"><?php echo $error; ?></p>
+        <?php endif ?>
+
         <input type="submit" value="Subir Foto" class="submit">
     </form>
     </div>
