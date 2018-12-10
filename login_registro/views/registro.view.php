@@ -31,7 +31,7 @@
         </div>
 
         <?php if(!empty($errores)): ?>
-            <div class="error f-white">
+            <div class="error">
                 <ul>
                     <?php echo $errores; ?>
                 </ul>

@@ -5,6 +5,8 @@ if (isset($_SESSION['usuario'])) {
     header('Location: index.php');
 } 
 
+$errores = '';
+
 #comprobamos si los datos se han enviado:
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $usuario = filter_var(strtolower($_POST['usuario']), FILTER_SANITIZE_STRING);
@@ -24,6 +26,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     ));
     $resultado = $statement->fetch();
     #var_dump($resultado);
+
+    if($resultado !== false) {
+        $_SESSION['usuario'] = $usuario;
+        header('Location: index.php');
+    } else {
+        $errores .= "<li>Los datos introducidos no son correctos</li>";
+    }
 }
 
 require 'views/login.view.php';
